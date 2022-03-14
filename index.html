@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="title1">NASA APOD</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+    <Body class="background "background="./images/background.jpg"> <br>  
+    
+    <header>
+        <nav class="Nav">
+            
+                <h1 class="title1 link__hover-effect link__hover-effect--line">
+                    APOD.
+                </h1>
+            
+            
+        </nav>
+        
+        <section id="datepicker">
+            <div class="pleasework">
+
+                <form>
+                    <div class="box">
+                        <h1 class="title2">PICK A DATE</h1>
+                        <label  for="date">
+                            <input id="date-input" class="Label" type="date" oninput="backgroundpls()" onchange="myPromise()" >
+                            
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="picturelol">
+                 <div class="content">
+
+                    <div class="containerforpic
+                    animate
+                    glow
+                    delay">
+                        <a id="hdimg" >
+                            <div class="image-div animate glow delay">
+                                <img id="image_of_the_day"  src ="" />
+                                <a href=#picturelol></a>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="forFlex">
+                            <div id="pls" class="explain">
+
+
+
+                            </div>
+                                <div id="para" class="white" >
+                                    
+                                    
+                            </div>
+                        </div>
+                        
+                        
+                </div>
+            </section>  
+    </header>
+    <script src="script.js"></script>
+    <script>
+       function backgroundpls(){
+        if(background){
+            var d = document.getElementById("image_of_the_day");
+            d.className += " imagexd animate glow delay";
+            
+         } 
+    }
+    </script>
+   
+</body>
+</html>
